@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Informações de Victor, um estudande de programação do Senac">
+    <title>Sobre mim - Victor</title>
+    <link rel="style" href="https://img.freepik.com/vetores-premium/ilustracao-de-um-livro_29937-110.jpg">
+    <style>
+        /* body
+        {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+        }
+        header 
+        {
+            background:black;
+            color: black;
+            padding: 10px 0;
+            
+            text-align: center;
+        }
+        main
+        {
+            padding: 20px;
+        }
+        h1
+        {
+            color: white;
+        }
+        h2
+        {
+            color: black;
+            text-align: center;
+            
+        }
+        section
+        {
+            margin-bottom: 20px;
+        }
+        ul
+        {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        li
+        {
+            margin-bottom: 10px ;
+        }
+        footer
+        {
+            text-align: center;
+            line-height: 2.0;
+        } */
+    </style>
+    <link rel="style" href="https://vejario.abril.com.br/wp-content/uploads/2021/04/open-book-LHR6JNG.jpg">
+</head>
+<link rel="stylesheet" href="./styles/1-html-basico.css">
+<body>
+    <header id="cabecalho">
+        <h1>Portfólio</h1>
+        <a class="btn" href="index.html">Inicio CSS</a>
+        
+    </header>
+
+    <main class="container">
+        <section>
+            <h2>Sobre mim</h2>
+            <li>Oi meu nome é Victor e tenho 16 anos.</li>
+            <li>Atualmente finalizando o EM no Colegio Catolica Machado de Assis e cursando o Jovem lirogramador.</p>
+            <li>Possuo um certificado de Programador de Sistemas dado pela Faculdade de Sistemas do Senac Joinville e estou agora comecando o curso de Programador Web no Senac também.</p>
+        </section>
+        <section>
+            <h2>Trabalhos feitos</h2>
+            <ul>
+                <li> Sistema para uma agropecuaria;</li>
+                <li> Um aplicativo para registrar e organizar tarefas tanto de casa como escolares;</li>
+                <li> Sistema de listagem de pets.</li>
+            </ul>
+        </section>
+        
+        
+        <section>
+            <h2>Dicas</h2>
+            <div>
+                <h3>Lista não ordenada:</h3>
+                <ul>
+                    <li>Gosto de jogos fps</li>
+                    <li>Faço academia</li>
+                    <li>Sou hetero</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Lista ordenada:</h3>
+                <ol>
+                    <li>Jujutsu Kaisen</li>
+                    <li>Bunny Girl </li>
+                    <li>Kaiju n° 8</li>
+                </ol>
+            </div>
+        </section>
+        <section>
+            <h2 id="teste">Imagem e video</h2>
+            <img width="820" height="315" src="https://github.com/setti-the-creator.png"/>
+            <div></div>
+            <iframe width="820" height="315" src="https://www.youtube.com/embed/kJjLkWILR6Q?si=U3khg-tuB5U0rnTL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+        <section class="last">
+            <h2>Seção de formularios</h2>
+            <form>
+                <div>
+                    <label for="nome">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Nome inteiro" required/>
+                </div>
+                <div>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="exemplo@gmail.com" required/>
+                </div>
+                <div>
+                    <label for="password">Password:</label>
+                    <input class="senha" type="password" id="password" name="password" placeholder="3xEmpl0"/> 
+                </div>
+                
+                <button class="botao" type="submit">Save</button >
+                <button class="botao" type="reset">Clear</button>
+
+        </form>
+    </section>
+</main>
+<footer class="bot">&copy; - 2024 Top 10 páginas já feitas
+    <button id="btn-click">Exemplo</button>
+</footer>
+</body>
+<script>
+   var element = document.getElementById("cabecalho");
+   element.style.backgroundColor = 'red'; 
+
+   var h1 = document.createElement('h1');
+   h1.textContent = "Grato por ter você aqui!";
+   h1.style.color = 'black'
+   element.append(h1)
+   //document é o dom, sempre colocar ele na frente e dps a função que quero usar
+   var btn = document.getElementById('btn-click');
+   btn.addEventListener('click', () => {
+    alert('O botao foi clicado!');
+   });
+   document.addEventListener('keydown', (e) => {
+    console.log(event.key);
+   })
+</script>
+</html>

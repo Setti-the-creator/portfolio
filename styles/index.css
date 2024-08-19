@@ -1,0 +1,26 @@
+body
+{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+/* usa o "." na frente apenas quando for referenciar uma class */
+.container a
+{
+    background-color: #442149c5;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+    padding: 5px 10px;
+    
+}
+
+.container
+{
+    text-align: center;
+}
+
+.container a:hover
+{
+
+    background-color: rgba(94, 45, 102, 0.781);
+}
+
